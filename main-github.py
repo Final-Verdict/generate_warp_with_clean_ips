@@ -13,7 +13,7 @@ first_ip_port = None
 def upload_to_github():
                 g = Github('your github token')
                 user = g.get_user()
-                repo = g.get_repo(f"{user.login}/sharefile")
+                repo = g.get_repo(f"{user.login}/YOUR_REPO_NAME")
                 fileContents = repo.get_contents("")
                 # Upload to github
                 with open("config.json", 'r' , encoding="utf8") as file:
